@@ -37,7 +37,7 @@ export default function Signup() {
           type="text"
           name="name"
           placeholder="Full Name"
-          className="w-full mb-4 p-3 border rounded-xl bg-dark text-white"
+          className="w-full mb-4 p-3 border rounded-xl  text-white"
           onChange={handleChange}
           required
         /><br></br><br></br>

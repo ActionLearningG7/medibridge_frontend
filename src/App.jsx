@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Signup from "./pages/Signup";
+import Signup from "./pages/signup";
 import Login from "./pages/Login";
-import Home from "./pages/Home";
+import HomePage from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
 
@@ -9,7 +9,8 @@ export default function App() {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/home" element={<HomePage />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
 
@@ -25,3 +26,4 @@ export default function App() {
     </BrowserRouter>
   );
 }
+
