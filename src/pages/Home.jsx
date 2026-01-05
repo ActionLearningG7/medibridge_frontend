@@ -14,9 +14,9 @@ export default function HomePage() {
         <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
           <h1 className="text-2xl font-bold text-blue-700">MediBridge</h1>
           <nav className="space-x-6 text-sm font-medium">
-            <a href="#features" className="hover:text-blue-600">Features</a>
-            <a href="#how" className="hover:text-blue-600">How It Works</a>
-            <a href="#about" className="hover:text-blue-600">About</a>
+            <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a href="./Login" className="hover:text-blue-600">Login</a></button>
+            <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a href="./Signup" className="hover:text-blue-600">Signup</a></button>
+            <button className="bg-red-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700"><a href="#about" className="hover:text-blue-600">About</a></button>
             <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
               Get Started
             </button>
