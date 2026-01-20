@@ -4,6 +4,12 @@ import Login from "./pages/Login";
 import HomePage from "./pages/Home";
 import Dashboard from "./pages/Dashboard";
 import ProtectedRoute from "./components/ProtectedRoute";
+import BookAppointment from "./pages/BookAppointment";
+import ChooseService from "./pages/ChooseService";
+import CreateProfile from "./pages/CreateProfile";
+import EmergencySOS from "./pages/EmergencySOS";
+
+
 
 export default function App() {
   return (
@@ -13,8 +19,11 @@ export default function App() {
         <Route path="/home" element={<HomePage />} />
         <Route path="/signup" element={<Signup />} />
         <Route path="/login" element={<Login />} />
-
-        <Route
+        <Route path="/BookAppointment" element={<BookAppointment />} />
+        <Route path="/ChooseService" element={<ChooseService />} />
+        <Route path="/CreateProfile" element={<CreateProfile />} />
+        <Route path="/EmergencySOS" element={<EmergencySOS />} />
+        <Route  
           path="/dashboard"
           element={
             <ProtectedRoute>
